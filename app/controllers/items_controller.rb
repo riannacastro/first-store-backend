@@ -4,4 +4,10 @@ class ItemsController < ApplicationController
         render json: items
     end
 
+    def show
+        item = Item.all
+        render json: item
+    end
+
+
 end
